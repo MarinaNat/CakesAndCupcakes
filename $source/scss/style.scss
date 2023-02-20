@@ -356,10 +356,13 @@ a {
 	// .product-catalog__column
 
 	&__column {
-		flex: 1 1 32.2%;
+		flex: 0 1 32.2%;
 		display: flex;
+		@media (max-width: 1250px) {
+			flex: 0 1 48%;
+		}
 		@media (max-width: 540px) {
-			flex: 1 1 100%;
+			flex: 0 1 100%;
 		}
 	}
 
