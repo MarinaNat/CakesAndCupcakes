@@ -119,11 +119,16 @@ a {
           flex-direction: column;
 }
 
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .container {
   max-width: 1220px;
   margin: 0px auto;
   padding: 0 20px 0;
-  margin-bottom: -60px;
 }
 @media (max-width: 1180px) {
   .container {
@@ -437,5 +442,104 @@ a {
   .button {
     padding: 20px 25px;
     font-size: 16px;
+  }
+}
+
+.product-catalog {
+  margin-bottom: 30px;
+  color: #2e363e;
+}
+.product-catalog__title {
+  font-weight: 500;
+  text-align: center;
+  margin: 0px 0px 80px 0px;
+}
+@media (max-width: 767px) {
+  .product-catalog__title {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.product-catalog__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.product-catalog__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 32.2%;
+          flex: 1 1 32.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 540px) {
+  .product-catalog__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+.product-catalog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.product-catalog__image {
+  overflow: hidden;
+  padding: 0 0 62.29% 0;
+  position: relative;
+  margin: 0px 0px 50px 0px;
+}
+.product-catalog__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product-catalog__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 143%;
+  margin: 0px 0px 12px 0px;
+}
+@media (max-width: 767px) {
+  .product-catalog__subtitle {
+    font-size: 18px;
+  }
+}
+.product-catalog__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 247px;
+  margin: 0px 0px auto 0px;
+  padding-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .product-catalog__text {
+    padding-bottom: 15px;
+  }
+}
+.product-catalog__price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0px 0px 14px 0px;
+}
+@media (max-width: 767px) {
+  .product-catalog__price {
+    font-size: 22px;
   }
 }
