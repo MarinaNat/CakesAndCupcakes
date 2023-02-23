@@ -38,7 +38,6 @@ if (menuLinks.length > 0) {
 	}
 }
 
-
 // Применение класса "ibg"
 function ibg() {
 

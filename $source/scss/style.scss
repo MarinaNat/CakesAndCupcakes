@@ -506,7 +506,7 @@ a {
 	}
 	@media (max-width: 767px) {
 		background: url("../img/content-first/bg__1000.jpg") 50% 50% no-repeat;
-		height: 600px;
+		height: 640px;
 		padding: 10px 0;
 	}
 	// .content-first__body
@@ -588,4 +588,127 @@ a {
 	}
 
 	// .content-first__text
+}
+
+.content-second {
+	color: #2e363e;
+	// .content-second__body
+
+	&__body {
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+		@media (max-width: 1010px) {
+			flex-direction: column;
+			align-items: center;
+			margin: 10px 0px 20px 0px;
+			gap: 40px;
+		}
+	}
+
+	&__row {
+		flex: 1 1 50%;
+		margin: 97px 0;
+		max-width: 580px;
+		padding: 0 20px;
+		@media (max-width: 1300px) {
+			margin: 0;
+		}
+	}
+
+	// .content-second__predtitle
+
+	&__predtitle {
+	}
+
+	// .content-second__title
+
+	&__title {
+		margin-bottom: 36px;
+		@media (max-width: 767px) {
+			margin-bottom: 16px;
+			letter-spacing: -1px;
+			line-height: 30px;
+		}
+	}
+
+	// .content-second__subtitle
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		margin: 0px 0px 30px 0px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		max-width: 438px;
+		@media (max-width: 767px) {
+			font-size: 14px;
+			gap: 15px;
+		}
+	}
+
+	&__text li {
+		position: relative;
+		padding-left: 22px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 7px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			background-color: #5d6afb;
+			border-radius: 50%;
+		}
+	}
+
+	// .content-second__link
+
+	&__link {
+	}
+
+	// .content-second__button
+
+	&__button {
+	}
+
+	&__confectioner {
+		flex: 0 0 580px;
+		position: relative;
+		@media (max-width: 1300px) {
+			flex: 0 0 380px;
+		}
+	}
+
+	&__name {
+		position: absolute;
+		z-index: 1;
+		bottom: 21%;
+		left: -92px;
+		width: 49.483%;
+		height: 112px;
+		@media (max-width: 1300px) {
+			left: 0;
+		}
+		@media (max-width: 640px) {
+			bottom: 0;
+		}
+	}
+
+	&__name img {
+		width: 100%;
+	}
+
+	&__image {
+		height: 100%;
+		width: 100%;
+		border-radius: 307px;
+		overflow: hidden;
+	}
+
+	&__image img {
+		width: 100%;
+	}
 }
