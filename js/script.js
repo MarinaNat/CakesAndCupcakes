@@ -1,3 +1,25 @@
+//Инициализируем Swiper
+new Swiper('.reviews__body', {
+	// стрелки
+	navigation: {
+		nextEl: '.button-arrow__right',
+		prevEl: '.button-arrow__left',
+	},
+	slidesPerView: "auto",
+	spaceBetween: -50,
+	loop: true,
+	effect: "panorama",
+	depth: 100,
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true,
+		pageUpDown: true,
+	},
+	// mousewheel: {
+	// 	sensitivity: 1,
+	// },
+});
+
 // открытие и закрытие бургер-меню
 const iconMenu = document.querySelector('.first-screen__burger');
 const menuBody = document.querySelector('.first-screen__menu');
@@ -37,6 +59,7 @@ if (menuLinks.length > 0) {
 		}
 	}
 }
+
 
 // Применение класса "ibg"
 function ibg() {
