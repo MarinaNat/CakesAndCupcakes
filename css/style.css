@@ -1181,3 +1181,148 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.forms {
+  background-color: #081130;
+  padding: 0px 0px 80px 0px;
+}
+.forms__header {
+  z-index: 0;
+  margin-top: -50px;
+  width: 100%;
+  height: 330px;
+  background: url(../img/reviews/bg_01.png) no-repeat;
+  background-size: cover;
+}
+@media (max-width: 500px) {
+  .forms__header {
+    height: 157px;
+  }
+}
+.forms__form {
+  background-color: #fff;
+  padding: 70px 99px;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .forms__form {
+    padding: 30px 20px;
+  }
+}
+.forms__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  text-align: center;
+  color: #2e363e;
+  margin: 0px 0px 12px 0px;
+}
+@media (max-width: 1180px) {
+  .forms__title {
+    font-size: 30px;
+    line-height: 133%;
+  }
+}
+@media (max-width: 992px) {
+  .forms__title {
+    font-size: 28px;
+    line-height: 123%;
+  }
+}
+@media (max-width: 767px) {
+  .forms__title {
+    font-size: 24px;
+    line-height: 113%;
+  }
+}
+@media (max-width: 500px) {
+  .forms__title {
+    font-size: 20px;
+    line-height: 113%;
+  }
+}
+.forms__subtitle {
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #2e363e;
+  margin: 0px 0px 36px 0px;
+}
+@media (max-width: 1180px) {
+  .forms__subtitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .forms__subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .forms__subtitle {
+    font-size: 14px;
+  }
+}
+.forms__field {
+  position: relative;
+  margin: 0 auto 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  max-width: 780px;
+}
+@media (max-width: 767px) {
+  .forms__field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.forms__field::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 26px;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  background: url("../img/form/icons/tel.svg") 50% no-repeat;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.forms__input {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 48.718%;
+          flex: 1 0 48.718%;
+  background: #f2f6fa;
+  border-radius: 8px;
+  padding: 32px 20px 29px 58px;
+}
+.forms__button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48.718%;
+          flex: 0 1 48.718%;
+}
+.forms__approval {
+  text-align: center;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 130%;
+  color: #7e868e;
+}
+@media (max-width: 500px) {
+  .forms__approval {
+    font-size: 10px;
+  }
+}
+.forms__approval p {
+  display: inline-block;
+}
+.forms__approval a {
+  display: inline-block;
+  text-decoration: underline;
+}

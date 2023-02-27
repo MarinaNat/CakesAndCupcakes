@@ -632,34 +632,41 @@
               </div>
             </div>
           </div>
-          <div class="subcribe">
+          <div class="forms">
+            <div class="forms__header"></div>
             <div class="container">
               <form
                 action="#"
                 method="post"
                 enctype="multipart/form-data"
-                class="subcribe__form"
+                class="forms__form"
               >
-                <h2 class="subcribe__subtitle subtitle">
-                  Подпишитесь на нашу рассылку
+                <h2 class="forms__title title">
+                  Чтобы сделать заказ, укажите ваш телефон
                 </h2>
-                <div class="subcribe__text text">
-                  Полезные статьи, акции, новости - получите все это сейчас!
+                <div class="forms__subtitle subtitle">
+                  Мы перезвоним в течении 15 минут, чтобы уточнить ваши
+                  пожелания
                 </div>
-                <div class="subcribe__field">
+                <div class="forms__field">
                   <input
-                    class="subcribe__input"
-                    type="email"
-                    name="e-mail"
-                    placeholder="Ваш e-mail"
+                    class="forms__input"
+                    type="tel"
+                    name="usertel"
+                    placeholder="Номер телефона"
                     value=""
                   />
-                  <button class="subcribe__button button" type="submit">
-                    Подписаться
+                  <button class="forms__button button" type="submit">
+                    Сделать заказ
                   </button>
                 </div>
-                <div class="subcribe__small-text">
-                  Мы не шлем спам, и передаем никому ваши данные.
+                <div class="forms__approval">
+                  <p>
+                    <input type="checkbox" name="approval" value="yes" />
+                    Нажамая на кнопку, вы соглашаетесь с
+                    <a href="#"> условиями обработки персональных данных </a>
+                    персональных данных
+                  </p>
                 </div>
               </form>
             </div>
