@@ -1327,3 +1327,28 @@ a {
   display: inline-block;
   text-decoration: underline;
 }
+
+.footer {
+  margin-top: -1px;
+  background-color: #081130;
+  color: #7e868e;
+  padding: 0px 0px 80px 0px;
+}
+.footer__row {
+  margin: 0px auto 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 43px;
+     -moz-column-gap: 43px;
+          column-gap: 43px;
+  row-gap: 22px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer__text {
+  text-align: center;
+}
