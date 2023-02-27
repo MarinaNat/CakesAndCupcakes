@@ -1174,6 +1174,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33%;
           flex: 1 1 33%;
+  max-width: 634px;
 }
 .gallery__column img {
   width: 100%;
